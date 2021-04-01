@@ -3,9 +3,11 @@
   border: none;
   background: #0b3a66;
   color: #fff;
+  transition: all 0.3s ease;
 }
 .hero_btn:hover {
   background: #2d5c88;
+  color: #fff;
 }
 .bold_text {
   font-weight: 700;
