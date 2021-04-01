@@ -1,0 +1,127 @@
+/*Custom Global Styling*/
+.hero_btn {
+  border: none;
+  background: #0b3a66;
+  color: #fff;
+}
+.hero_btn:hover {
+  background: #2d5c88;
+}
+.bold_text {
+  font-weight: 700;
+}
+.light_text {
+  font-weight: 300;
+}
+.colored_text {
+  color: #2d5c88;
+  font-weight: bold;
+}
+.colored {
+  color: #2d5c88;
+}
+.icons {
+  color: gray;
+}
+/*Styling for Hero Section*/
+#hero {
+  background: url("./../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+#hero .container .row .card .card-body .flex_container {
+  display: flex;
+  justify-content: space-evenly;
+}
+/*Styling for Property Desctiption*/
+#circle_icon {
+  font-size: 10px;
+  font-weight: 900;
+  position: relative;
+}
+#circle_icon::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+  width: 180px;
+  height: 1px;
+  background: gray;
+}
+#circle_icon::before {
+  content: "";
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  width: 180px;
+  height: 1px;
+  background: gray;
+}
+/*Styling for Property Desc*/
+#property_desc .container .row .flex_container {
+  display: flex;
+  justify-content: space-between;
+}
+/*Styling for Property Details*/
+#property_detail {
+  background: url("./../images/property-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+#property_detail .layer {
+  background: rgba(31, 31, 31, 0.6);
+}
+#property_detail .layer .container .row .wrapper {
+  padding: 0 12px;
+}
+#property_detail .layer .container .row .wrapper .flex_container {
+  display: flex;
+  justify-content: space-between;
+}
+/*Styling for Gallery*/
+#gallery .container .row .flex_container {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 12px;
+}
+#gallery .container .row #img_container {
+  overflow: hidden;
+}
+#gallery .container .row #img_container img {
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+#gallery .container .row #img_container img:hover {
+  transform: scale(1.1);
+}
+/*Styling for Responsive*/
+@media (max-width: 767.98px) {
+  #circle_icon::after,
+  #circle_icon::before {
+    width: 100px;
+  }
+  #hero .container .row .card .card-body .flex_container {
+    justify-content: space-between;
+  }
+  #property_desc .container .row .flex_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #property_detail .layer .container .row .wrapper .flex_container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+/*Responsive Styling for Extra small*/
+@media (max-width: 400.98px) {
+  #hero .container .row .card .card-body .flex_container {
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  #hero .container .row .card .card-body .flex_container .btns_wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
